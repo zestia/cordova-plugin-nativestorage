@@ -252,7 +252,7 @@
 			NSUserDefaults *defaults = [self getUserDefault];
 			[defaults setObject: aString forKey:reference];
 			[defaults synchronize];
-			BOOL success = true
+			BOOL success = true;
 			if(success) pluginResult = [CDVPluginResult resultWithStatus: CDVCommandStatus_OK messageAsString:aString];
 			else pluginResult = [CDVPluginResult resultWithStatus: CDVCommandStatus_ERROR messageAsInt:1]; //Write has failed
 		}
